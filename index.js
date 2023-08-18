@@ -1,4 +1,3 @@
-// Every hour.
 const energySocketInterface = require('./energySocketInterface')
 const config = require('./config')
 
@@ -11,4 +10,5 @@ setInterval(() => {
         power_on: powerOn
     })
         .then(data => console.log(data))
+
 }, config.interval)
